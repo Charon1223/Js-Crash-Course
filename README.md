@@ -71,3 +71,64 @@ const todoJSON = JSON.stringify(todos);
 ```
 ### 일단 지금은 새벽2시니 여기까지만 하고
 ### 내일 나머지 공부해야겠다.
+
+
+-----------
+-----------
+
+### 오늘 이어서 시작!
+
+```
+
+const todos = [
+  {
+    id: 1,
+    text: 'Take out trash',
+    isCompleted: true
+  },
+  {
+    id: 2,
+    text: 'Meeting with boss',
+    isCompleted: true
+  },
+  {
+    id: 3,
+    text: 'Dentist appt',
+    isCompleted: false
+  },
+];
+
+
+// forEach, map, filter //
+const todoCompleted = todos.filter(function(todo) {
+  return todo.isCompleted === true;     __->위 3 id 중 isCompleted 값이 True인 항목만 출력__
+}).map(function(todo) {
+  return todo.text;          __-> 그 중 Text만 출력__
+})
+; 
+
+console.log(todoCompleted);
+
+```
+
+---
+##Switch (조건문/ ? / :)
+```
+const x = 9;
+
+const color = x > 10 ? 'red' : 'blue'; __-> x가 10보다 작을때(?) true면 red, false면 blue/__
+
+switch(color) {
+  case 'red':
+    console.log('color is red');
+    break;
+  case 'blue':
+    console.log('color is blue');
+    break;
+  default:
+    console.log('color is NOT red or blue');
+    break;
+} 
+```
+### 아...도통 머리에 들어오지 않는다..그냥 따라치기만 하는 수준인데 어떻게 해야 할까?
+
